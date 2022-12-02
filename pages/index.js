@@ -32,8 +32,8 @@ const Home = () => {
       <section className="faq py-8 bg-gray-400">
         <div className="container mx-auto max-w-screen-md">
           <h2 className="text-4xl font-bold mb-2 text-gray-800">Frequently asked questions</h2>
-          {faqEntries.map(entry => (
-            <FAQ question={entry.question} answer={entry.answer} />
+          {faqEntries.map((entry, index) => (
+            <FAQ key={index} question={entry.question} answer={entry.answer} />
           ))}
         </div>
       </section>
