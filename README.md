@@ -11,6 +11,7 @@ This website was developed entirely by ChatGPT, a large language model trained b
 Our website was developed entirely by ChatGPT, a large language model trained by OpenAI. Here are some behind the scenes images showing how ChatGPT designed and built the website:
 
 | Screenshot | Screenshot | Screenshot | Screenshot |
+|------------|------------|------------|------------|
 | ![](bts/01.png) | ![](bts/02.png) | ![](bts/03.png) | ![](bts/04.png) |
 | ![](bts/05.png) | ![](bts/06.png) | ![](bts/07.png) | ![](bts/08.png) |
 | ![](bts/09.png) | ![](bts/10.png) | ![](bts/11.png) | ![](bts/12.png) |
