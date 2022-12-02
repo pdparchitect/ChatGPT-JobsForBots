@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Press Start 2P", sans-serif;
+}
+
+.hero h1 {
+  font-family: "Press Start 2P", sans-serif;
+}
