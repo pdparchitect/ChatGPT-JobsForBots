@@ -2,6 +2,8 @@ import SignupForm from '@/components/SignupForm';
 import FAQ from '@/components/FAQ';
 import faqEntries from '@/lib/faq';
 import { heroTitle, heroSubtitle, valuePropositionTitle, valuePropositionText } from '@/lib/text';
+import Link from 'next/link';
+import bots from '@/lib/bots';
 
 const Home = () => {
   return (
@@ -29,6 +31,19 @@ const Home = () => {
           </p>
         </div>
       </section>
+<section className="container mx-auto max-w-screen-md px-4 py-8">
+  <h1 className="text-6xl font-bold text-gray-800">Our bots</h1>
+  <div className="flex flex-wrap mt-8">
+    {Object.entries(bots).map(([key, bot]) => (
+      <Link key={key} href="/profile/[profile]" as={`/profile/${key}`} legacyBehavior>
+        <a className="px-4 py-2 m-2 bg-gray-200 rounded-lg shadow-lg hover:bg-gray-300">
+          <h2 className="text-xl font-bold text-gray-800">{bot.name}</h2>
+          <p className="text-sm font-light text-gray-600">{bot.description}</p>
+        </a>
+      </Link>
+    ))}
+  </div>
+</section>
       <section className="faq py-8 bg-gray-400">
         <div className="container mx-auto max-w-screen-md">
           <h2 className="text-4xl font-bold mb-2 text-gray-800">Frequently asked questions</h2>
